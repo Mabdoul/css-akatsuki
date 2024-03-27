@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "poppins";
+ color: white;
+}
+
+body{
+    background: linear-gradient(17deg,#0f0a0a,70%,red);
+    height: 100vh;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 10%;
+
+}
+.header img{
+    height: 50px;
+    scale: .9;
+    filter: saturate(3);
+    transition: .5s;
+
+}
+.header img:hover{
+    filter:drop-shadow(3) ;
+    scale: 1;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 35px;
+    font-size: 19px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    
+}
+.navbar a::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid red;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: .5s ease;
+    opacity: 0;
+    z-index: -1;
+
+}
+.navbar a:hover::before{
+    height: 100%;
+    top: 0;
+    opacity: 1;
+}
+section{
+    padding: 10rem 9% 2rem;
+    height: 100vh;
+    width: 100%;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.text-content{
+    max-width: 600px;
+}
+.text-content h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 550;
+}
+.text-content span{
+    font-size: 32px;
+    color: red;
+
+}
+.text-content p{
+    font-size: 13px;
+}
+.button{
+    margin: 10px 0
+    ;
+}
+.btn{
+    height: 45px;
+    width: 150px;
+    background: transparent;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid red;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    background: -o-linear-gradient(black,red,black,red);
+    transition: .5s ease;
+    z-index: -1;
+}
+.btn:hover::before{
+    top: 0;
+
+}
+.home .imageSet1 img{
+    height: 400px;
+    position: absolute;
+    transform: translateX(-150%);
+    scale: 0;
+    animation: PopUp 1s ease forwards;
+
+}
+@keyframes PopUp{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.imageSet1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.imageSet1 img{
+    position: absolute;
+}
+.imageSet1 img:nth-child(2){
+    left: -180px;
+    bottom: -60px;
+    z-index: -2;
+    scale: 0;
+    animation-delay: .5s;
+}
+.imageSet1 img:nth-child(3){
+    left: 250px;
+    z-index: -2;
+    animation-delay: 2.5s;
+}
+.imageSet1 img:nth-child(4){
+    left: 90px;
+    bottom: -120px;
+    z-index: -2;
+    animation-delay: 2s;
+
+}
+.imageSet1 img:nth-child(5){
+    left: 30px;
+    top: -260px;
+    z-index: -3;
+    animation-delay: 3s;
+
+
+}
+.imageSet1 img:nth-child(6){
+    left: -40px;
+    top: -300px;
+    z-index: -3;
+    animation-delay: 1s;
+}
+.imageSet1 img:nth-child(7){
+    left: 40px;
+    top: -175px;
+    z-index: -2;
+    animation-delay: 1.5s;
+}
+.about {
+    background: linear-gradient(35deg,black,70%,red);
+}
+.heading{
+    text-align: center;
+    font-size:35px ;
+    font-weight: 500;
+}
+.heading span{
+    color: red;
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .text h2{
+    font-size: 32px;
+    text-align: left;
+    font-weight: 550;
+}
+.content .text h3{
+    font-size: 22px;
+    font-weight: 500;
+
+    
+}
+.content .text p{
+     max-width: 700px;
+     font-size: 14px;
+     margin: 5px 0;
+}
+.content img{
+    height: 450px;
+}
+.Member{
+    background: linear-gradient(35deg,black,70%,red);
+
+}
+.stream{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.image-information img{
+    height: 150px;
+    transition: .5s ease;
+}
+.image-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image-content .image-information{
+    height:400px ;
+    width: 270px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin-left: 35px;
+
+}
+.image-information p{
+    font-size: 13px;
+    margin: 30px 0;
+   ;
+
+}
+.image-information:hover img,p{
+    height: 200px;
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
