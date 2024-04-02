@@ -436,6 +436,12 @@ footer .imagev2 img{
     font-weight: 500;
     visibility: hidden;
 }
+ footer .imagev2 img {
+    height: 83px;
+    margin: 17px;
+    text-align: center;
+    display: inline;
+}
 
 }
 
