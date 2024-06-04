@@ -202,6 +202,7 @@ section{
 
 }
 .content{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,8 +223,9 @@ section{
      font-size: 14px;
      margin: 5px 0;
 }
-.content img{
+.content img {
     height: 450px;
+    display: none;
 }
 .Member{
     background: linear-gradient(35deg,black,70%,red);
@@ -276,6 +278,30 @@ footer .imagev2 img {
 }
 
 
+.aka{
+    width: 900px;
+    height: 200px;
+    opacity: 0;
+    background: linear-gradient(35deg,black,70%,red); ;
+}
+.ko{
+    width: 900px;
+    height: 200px;
+    opacity: 0;
+    background: linear-gradient(35deg,black,70%,red); ;
+}
+.ita{
+    width: 900px;
+    height: 200px;
+    opacity: 0;
+    background: linear-gradient(35deg,black,70%,red); ;
+}
+.pa{
+    width: 900px;
+    height: 200px;
+    opacity: 0;
+    background: linear-gradient(35deg,black,70%,red); ;
+}
 
 
 
@@ -436,12 +462,21 @@ footer .imagev2 img{
     font-weight: 500;
     visibility: hidden;
 }
- footer .imagev2 img {
+footer .imagev2 img {
     height: 83px;
     margin: 17px;
     text-align: center;
     display: inline;
 }
 
-}
 
+
+
+
+
+
+
+
+
+
+}
